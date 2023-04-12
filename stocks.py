@@ -24,7 +24,7 @@ st.sidebar.header('User Input Parameters')
 time = pd.to_datetime('now')
 today = datetime.date.today()
 def user_input_features():
-    ticker = st.sidebar.text_input("Ticker", 'XRP-EUR')
+    ticker = st.sidebar.text_input("Ticker", 'SPY')
     start_date = st.sidebar.text_input("Start Date", '2019-01-01')
     end_date = st.sidebar.text_input("End Date", f'{today}')
     buying_price = st.sidebar.number_input("Buying Price", value=0.2000, step=0.0001)
